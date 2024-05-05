@@ -3,31 +3,203 @@
     /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
+
+/*===============================Шрифт===============================*/
+@font-face {
+    font-family: "Rust";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Rust");
+    url("/fonts/Rust.ttf") format("ttf");
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+/*===============================Шрифт===============================*/
  body
 {
     background-color: #242424
 }
-.logo
-{
+.portfolio-container, .portfolio, .portfolio-footer {
+    width: 75%;
+    min-width: 650px;
+    margin: auto;
+}
+
+.portfolio-header {
+    background-color: #2B2B2B;
+    color: #000000;
+    padding: 15px 0 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
     width: 501px;
     height: 56px;
+    margin-left: -150px;
 }
-.top-menu li
-{
-    display: inline-block;
+
+.links .link {
+    color: #ffffff;
+    /*font-style: bold;*/
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    transition: all 0.2s linear;
 }
-.logo-class, .top-menu
-{
-    display: inline-block;
-    margin-left: 150px;
+
+.links .link:hover {
+    color: #D45A5A;
+    border-radius: 3px;
+    transition: all 0.2s linear;
 }
-header
-{
-    display: flex;
-    /*justify-content: center;*/
+
+.links .link + .link {
+    margin-left: 20px;
+    display: inline;
+    /*font-size: ;*/
 }
-.header-menu
+.linkActive
 {
-    width: auto;
+    color: #EE4025;
+    /*font-style: bold;*/
+    /*text-decoration: none;*/
+    text-align: center;
+    font-size: x-large;
+    margin-right: 20px;
+    transition: all 0.2s linear;
+}
+.main-container
+{
+    padding: 50px;
+    text-align: center;
+}
+.Title
+{
+    font-family: Poppins;
+    color: #A9A9A9;
+}
+.main-title-desc
+{
+    padding: 20px;
+    color: white;
+}
+.main-desc
+{
+    width: 600px;
+    height: 144px;
+    color: #A9A9A9;
+    text-align: center;
 }
