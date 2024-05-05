@@ -203,3 +203,33 @@
     color: #A9A9A9;
     text-align: center;
 }
+.btn-explorer
+{
+    border-radius: 120px;
+    width: 364px;
+    height: 38px;
+    background: linear-gradient(135deg, #ee4025 0%, #a33120 100%);
+    cursor: pointer;
+    display: block;
+    transition:
+            width 2s,
+            height 2s,
+            background-color 2s,
+            transform 2s;
+    -webkit-transition:
+            width 2s,
+            height 2s,
+            background-color 2s,
+            -webkit-transform 2s;
+}
+.btn-explorer:hover
+{
+    background: linear-gradient(135deg,#a33120 0%, #ee4025 100% );
+}
+.btn-explorer-h2
+{
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
