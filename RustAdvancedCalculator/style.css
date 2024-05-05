@@ -1,0 +1,33 @@
+*
+{
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+}
+ body
+{
+    background-color: #242424
+}
+.logo
+{
+    width: 501px;
+    height: 56px;
+}
+.top-menu li
+{
+    display: inline-block;
+}
+.logo-class, .top-menu
+{
+    display: inline-block;
+    margin-left: 150px;
+}
+header
+{
+    display: flex;
+    /*justify-content: center;*/
+}
+.header-menu
+{
+    width: auto;
+}
