@@ -30,7 +30,7 @@
                 ore that you are interested in *Sulfur ore is some bug*</p>
     </div>
     <div class="all-ore">
-        <img onclick="let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText =(RockCalc);" id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
+        <img onclick="let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText = (RockCalc); let ClubCalc = inputCalculatorSulfur * sulfurClub; document.getElementById('club').innerText = (ClubCalc)" id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
         <img onclick="let inputCalculatorStone = document.getElementById('SulfurInput').value; console.log(inputCalculatorStone + ' Stone'); document.getElementById('rock').innerText=(inputCalculatorStone);" src="images/ores/stones.png" alt="Камень" class="stone">
         <img onclick="let inputCalculatorMetal = document.getElementById('SulfurInput').value; console.log(inputCalculatorMetal + ' Metal');  document.getElementById('rock').innerText=(inputCalculatorMetal);" src="images/ores/metal.ore.png" alt="Металл" class="metal-ore">
     </div>
@@ -45,7 +45,14 @@
     </div>
     <div class="ore-calculator">
         <div class="ore-container">
-            <p id="rock">Rock Counter</p>
+            <div class="rock-container">
+                <img class="oreimg1" src="images/ores/rock.png">
+                <p class="rock" id="rock">0</p>
+            </div>
+            <div class="club-container">
+                <img class="oreimg1" src="images/ores/bone.club.png">
+                <p class="club" id="club">0</p>
+            </div>
         </div>
     </div>
 </main>
