@@ -385,14 +385,32 @@ textarea:focus, .inputCalculator
 }
 .ore-calculator
 {
-    background-color: #EE4025;
-    padding-top: 100px;
+    /*background-color: #EE4025;*/
+    padding-top: 10px;
     width: 30px;
     height: 30px;
+    display: inline-block;
 }
 .ore-container
 {
+    display: inline-block;
     padding:30px;
     color: white;
+    font-size: x-large;
+    /*background-color: #A9A9A9;*/
     /*background-color: #EE4025;*/
+}
+.oreimg1
+{
+    width: 90px;
+    height: 90px;
+    /*margin-left: 20px;*/
+}
+.rock
+{
+    text-align: center;
+}
+.club-container
+{
+    text-align: center;
 }
