@@ -7,15 +7,15 @@
     <meta charset="UTF-8">
     <title>Rust Advanced Calculator</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="script.js"></script>
-    <link rel="shortcut icon" href="/RustAdvancedCalculator/images/favicon.ico" type="image/x-icon">
+    <script src="/script.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header class="portfolio-header">
     <div class="portfolio-container">
         <img class="logo" src="images/LogoRework.png" width="100" alt="Лого">
         <nav class="links">
-            <a class="link" href="/index.html">HOME</a>
+            <a class="link" href="https://stormachorange.github.io/rust_advanced_calculator/#">HOME</a>
             <a class="linkActive" href="#">FARM</a>
             <a class="link" href="#">RAID</a>
             <a class="link" href="#">RECYCLE</a>
@@ -23,17 +23,30 @@
     </div>
 </header>
 <main>
-    <div class="main-container">
-        <p onclick="document.getElementById('UwU').innerText = 'UwU'" class="Title" id="UwU">By Stormach</p>
-        <h1 class="main-title-desc">Rust Advanced Calculator</h1>
-        <center>
-            <p class="main-desc">With the help of this site, you can calculate how much you need for a raid,
-                or let's say how much you can farm if you drank pure ore tea. The site will be
-                updated with every update in the Rust game itself.</p>
-            <div onclick="document.getElementById('explorer').innerText = 'TIME TO MATH'" class="btn-explorer">
-                <h2 id="explorer" class="btn-explorer-h2">Explore</h2>
-            </div>
-        </center>
+    <div class="main-containerFarm">
+        <h1 class="main-title-desc-farm">Farm Calculator</h1>
+
+            <p class="main-descFarm">First, write any number, and then click on any
+                ore that you are interested in *Sulfur ore is some bug*</p>
+    </div>
+    <div class="all-ore">
+        <img onclick="let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText =(RockCalc);" id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
+        <img onclick="let inputCalculatorStone = document.getElementById('SulfurInput').value; console.log(inputCalculatorStone + ' Stone'); document.getElementById('rock').innerText=(inputCalculatorStone);" src="images/ores/stones.png" alt="Камень" class="stone">
+        <img onclick="let inputCalculatorMetal = document.getElementById('SulfurInput').value; console.log(inputCalculatorMetal + ' Metal');  document.getElementById('rock').innerText=(inputCalculatorMetal);" src="images/ores/metal.ore.png" alt="Металл" class="metal-ore">
+    </div>
+    <div class="all-tea">
+        <img src="images/ores/oretea.png" alt="обычный чай" class="classic-tea">
+        <img src="images/ores/oretea.advanced.png" alt="крутой чай" class="advanced-tea">
+        <img src="images/ores/oretea.pure.png" alt="чистенький чаёк" class="pure-tea">
+        <img src="images/ores/notea.png" alt="без чаёчка" class="no-tea">
+    </div>
+    <div class="ore-counter">
+        <input class="inputCalculator" type="number" name="" id="SulfurInput">
+    </div>
+    <div class="ore-calculator">
+        <div class="ore-container">
+            <p id="rock">Rock Counter</p>
+        </div>
     </div>
 </main>
 </body>
