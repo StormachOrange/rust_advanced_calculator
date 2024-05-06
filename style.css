@@ -234,3 +234,165 @@
     cursor: pointer;
     user-select: none;
 }
+.main-title-desc-farm
+{
+    padding: 20px;
+    color: white;
+}
+.main-containerFarm
+{
+    padding: 20px;
+    text-align: left;
+}
+.main-descFarm
+{
+    padding-left: 20px;
+    width: 550px;
+    height: 50px;
+    color: #A9A9A9;
+    text-align: left;
+}
+.all-ore
+{
+    width: 370px;
+    height: 215px;
+    padding-left: 30px;
+    display: inline-block;
+    user-select: none;
+}
+.sulfur-ore
+{
+    margin-top: 30px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.sulfur-ore:hover
+{
+    width: 95px;
+    height: 95px;
+    /*margin-left: 25px;*/
+    /*margin-right: 15px;*/
+}
+.stone
+{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-right: 15px;
+}
+.stone:hover
+{
+    width: 105px;
+    height: 105px;
+}
+.metal-ore
+{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-right: 15px;
+}
+.metal-ore:hover
+{
+    width: 105px;
+    height: 105px;
+}
+.all-tea
+{
+    padding-left: 50px;
+    display: inline-block;
+    user-select: none;
+
+}
+.classic-tea
+{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-right: 15px;
+}
+.classic-tea:hover
+{
+    width: 105px;
+    height: 105px;
+}
+.advanced-tea
+{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-right: 15px;
+}
+.advanced-tea:hover
+{
+    width: 105px;
+    height: 105px;
+}
+.pure-tea
+{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-right: 15px;
+}
+.pure-tea:hover
+{
+    width: 105px;
+    height: 105px;
+}
+.no-tea
+{
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.no-tea:hover
+{
+    width: 105px;
+    height: 105px;
+}
+.ore-counter
+{
+    margin-top: -100px;
+    display: flex;
+    /*position: fixed;*/
+    padding-left: 30px;
+    /*display: flex;*/
+}
+.inputCalculator
+{
+    background-color: #EE4025;
+    border: #EE4025;
+    color: white;
+    text-align: center;
+    width: 355px;
+    height: 25px;
+}
+textarea:focus, .inputCalculator
+{
+    outline: none;
+}
+.ore-calculator
+{
+    background-color: #EE4025;
+    padding-top: 100px;
+    width: 30px;
+    height: 30px;
+}
+.ore-container
+{
+    padding:30px;
+    color: white;
+    /*background-color: #EE4025;*/
+}
