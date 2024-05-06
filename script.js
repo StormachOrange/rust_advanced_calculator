@@ -4,3 +4,4 @@ let sulfurCalc =
     sulfurMolot = 146;
     sulfurPickaxe = 257;
     sulfurAdvancedPickaxe = 300;
+// немного переносим этот прикол
