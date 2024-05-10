@@ -14,6 +14,39 @@
             sulfurMolot = 146;
             sulfurPickaxe = 257;
             sulfurAdvancedPickaxe = 300;
+        let stoneCalc =
+            stoneRock = 375;
+            stoneClub = 450;
+            stoneMolot = 536;
+            stonePickaxe = 794;
+            stoneAdvancedPickaxe = 1000;
+        let metalCalc =
+            metalRock = 250;
+            metalClub = 286;
+            metalMolot = 358;
+            metalPickaxe =  485;
+            metalAdvancedPickaxe = 600;
+
+        function ClassicTea()
+        {
+            // Osnova vsego
+            let choose = document.getElementById('choose-id1').innerText = ('Classic Tea');
+            let percent = 0.20;
+            let inputClassicTea = document.getElementById('SulfurInput').value;
+            // Rock
+            let RockSulfurPercentResult =  inputClassicTea * sulfurRock * percent;
+            let RockSulfurResult = inputClassicTea * sulfurRock + RockSulfurPercentResult;
+            document.getElementById('rock').innerText = (RockSulfurResult);
+            // Club
+            let ClubSulfurPercentResult = inputClassicTea * sulfurClub * percent;
+            let ClubSulfurResult = inputClassicTea * sulfurClub + ClubSulfurPercentResult;
+            document.getElementById('club').innerText = (ClubSulfurResult)
+            // Molot
+            let MolotSulfurPercentResult = inputClassicTea * sulfurMolot * percent;
+            let MolotSulfurResult = inputClassicTea * sulfurMolot + MolotSulfurPercentResult;
+            document.getElementById('hammer').innerText = (MolotSulfurResult)
+        }
+
     </script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
@@ -36,23 +69,23 @@
             <p class="main-descFarm">First, write any number, and then click on any
                 ore that you are interested in *Sulfur ore is some bug*</p>
     </div>
-    <div class="all-ore">
-        <img onclick="let sulfurCalc =sulfurRock = 100;sulfurClub = 101;sulfurMolot = 146;sulfurPickaxe = 257;sulfurAdvancedPickaxe = 300; let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText = (RockCalc); let ClubCalc = inputCalculatorSulfur * sulfurClub; document.getElementById('club').innerText = (ClubCalc)" id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
-        <img onclick="let inputCalculatorStone = document.getElementById('SulfurInput').value; console.log(inputCalculatorStone + ' Stone'); document.getElementById('rock').innerText=(inputCalculatorStone);" src="images/ores/stones.png" alt="Камень" class="stone">
-        <img onclick="let inputCalculatorMetal = document.getElementById('SulfurInput').value; console.log(inputCalculatorMetal + ' Metal');  document.getElementById('rock').innerText=(inputCalculatorMetal);" src="images/ores/metal.ore.png" alt="Металл" class="metal-ore">
+    <div class="all-ore"> <!--3к+ букв в этом калькуляторе:)))-->
+<!--Sulfur--><img onclick="let choose = document.getElementById('choose-id').innerText = ('Sulfur');let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText = (RockCalc); let ClubCalc = inputCalculatorSulfur * sulfurClub; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorSulfur * sulfurMolot; document.getElementById('hammer').innerText = (HammerCalc);let StonePickaxeCalc = inputCalculatorSulfur * sulfurPickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1); let AdvancedPickaxeCalc2 = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2); " id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
+<!--Stone!--><img onclick="let choose = document.getElementById('choose-id').innerText = ('Stone');let inputCalculatorStone = document.getElementById('SulfurInput').value; console.log(inputCalculatorStone + ' Stone'); let RockCalc = inputCalculatorStone * stoneRock; document.getElementById('rock').innerText=(RockCalc); let ClubCalc = inputCalculatorStone * stoneCalc; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorStone * stoneMolot; document.getElementById('hammer').innerText = (HammerCalc); let StonePickaxeCalc = inputCalculatorStone * stonePickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1); let AdvancedPickaxeCalc2 = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2);" src="images/ores/stones.png" alt="Камень" class="stone">
+<!--Metal!--><img onclick="let choose = document.getElementById('choose-id').innerText = ('Metal');let inputCalculatorMetal = document.getElementById('SulfurInput').value; console.log(inputCalculatorMetal + ' Metal'); let RockCalc = inputCalculatorMetal * metalRock; document.getElementById('rock').innerText=(RockCalc); let ClubCalc = inputCalculatorMetal * metalClub; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorMetal * metalMolot; document.getElementById('hammer').innerText = (HammerCalc); let StonePickaxeCalc = inputCalculatorMetal * metalPickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1);let AdvancedPickaxeCalc2 = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2); " src="images/ores/metal.ore.png" alt="Металл" class="metal-ore">
     </div>
     <div class="all-tea">
-        <img src="images/ores/oretea.png" alt="обычный чай" class="classic-tea">
-        <img src="images/ores/oretea.advanced.png" alt="крутой чай" class="advanced-tea">
-        <img src="images/ores/oretea.pure.png" alt="чистенький чаёк" class="pure-tea">
-        <img src="images/ores/notea.png" alt="без чаёчка" class="no-tea">
+        <img onclick="ClassicTea()" src="images/ores/oretea.png" alt="обычный чай" class="classic-tea">
+        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('Advanced Tea');" src="images/ores/oretea.advanced.png" alt="крутой чай" class="advanced-tea">
+        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('Pure Tea');" src="images/ores/oretea.pure.png" alt="чистенький чаёк" class="pure-tea">
+        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('no tea :(');" src="images/ores/notea.png" alt="без чаёчка" class="no-tea">
     </div>
     <div class="ore-counter">
         <input class="inputCalculator" type="number" name="" id="SulfurInput">
     </div>
     <div class="ore-calculator">
         <div class="ore-container">
-            <div class="rock-container">
+            <div class="club-container">
                 <img class="oreimg1" src="images/ores/rock.png">
                 <p class="rock" id="rock">0</p>
             </div>
@@ -60,9 +93,33 @@
                 <img class="oreimg1" src="images/ores/bone.club.png">
                 <p class="club" id="club">0</p>
             </div>
+            <div class="club-container">
+                <img class="oreimg1" src="images/ores/hammer.salvaged.png">
+                <p class="club" id="hammer">0</p>
+            </div>
+            <div class="club-container">
+                <img class="oreimg1" src="images/ores/stone.pickaxe.png">
+                <p class="club" id="stonePickaxe">0</p>
+            </div>
+            <div class="club-container">
+                <img class="oreimg1" src="images/ores/pickaxe.png">
+                <p class="club" id="advancedPickaxe">0</p>
+            </div>
+            <div class="club-container">
+                <img class="oreimg1" src="images/ores/jackhammer.png">
+                <p class="club" id="advancedPickaxe1">0</p>
+            </div>
+            <div class="club-container">
+                <img class="oreimg1" src="images/ores/icepick.salvaged.png">
+                <p class="club" id="advancedPickaxe2">0</p>
+            </div>
+            <div class="choose-prikol">
+                <h3 id="choose-id" style="padding: 15px; color: #EE4025">Ore</h3>
+                <h3 id="choose-id1" style="padding-left: 15px; color: #EE4025">Tea</h3>
+            </div>
+
         </div>
     </div>
 </main>
 </body>
 </html>
-
