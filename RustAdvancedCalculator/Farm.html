@@ -27,33 +27,156 @@
             metalPickaxe =  485;
             metalAdvancedPickaxe = 600;
 
-        function ClassicTea()
-        {
+
+        function sulfurcalc(){let choose1 = document.getElementById('choose-id1').innerText = ('no tea:(');let choose = document.getElementById('choose-id').innerText = ('Sulfur');let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText = (RockCalc); let ClubCalc = inputCalculatorSulfur * sulfurClub; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorSulfur * sulfurMolot; document.getElementById('hammer').innerText = (HammerCalc);let StonePickaxeCalc = inputCalculatorSulfur * sulfurPickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1); let AdvancedPickaxeCalc2 = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2);}
+        function ClassicTea() {
             // Osnova vsego
             let choose = document.getElementById('choose-id1').innerText = ('Classic Tea');
             let percent = 0.20;
-            let inputClassicTea = document.getElementById('SulfurInput').value;
-            // Rock
-            let RockSulfurPercentResult =  inputClassicTea * sulfurRock * percent;
-            let RockSulfurResult = inputClassicTea * sulfurRock + RockSulfurPercentResult;
+            let inputClassicTea2 = document.getElementById('SulfurInput').value;
+            console.log(inputClassicTea2)
+            let STCalc =
+                rockST = document.getElementById('rock').innerText;
+                clubST = document.getElementById('club').innerText;
+                molotST = document.getElementById('hammer').innerText;
+                pickaxeST = document.getElementById('stonePickaxe').innerText;
+                advpickaxeST = document.getElementById('advancedPickaxe').innerText;
+            // Rock ---- sulfur
+            let RockSulfurPercentResult = inputClassicTea2 * rockST * percent;
+            let RockSulfurResult = inputClassicTea2 * rockST + RockSulfurPercentResult;
             document.getElementById('rock').innerText = (RockSulfurResult);
             // Club
-            let ClubSulfurPercentResult = inputClassicTea * sulfurClub * percent;
-            let ClubSulfurResult = inputClassicTea * sulfurClub + ClubSulfurPercentResult;
-            document.getElementById('club').innerText = (ClubSulfurResult)
+            let ClubSulfurPercentResult = inputClassicTea2 * clubST * percent;
+            let ClubSulfurResult = inputClassicTea2 * clubST + ClubSulfurPercentResult;
+            document.getElementById('club').innerText = (ClubSulfurResult);
             // Molot
-            let MolotSulfurPercentResult = inputClassicTea * sulfurMolot * percent;
-            let MolotSulfurResult = inputClassicTea * sulfurMolot + MolotSulfurPercentResult;
-            document.getElementById('hammer').innerText = (MolotSulfurResult)
+            let MolotSulfurPercentResult = inputClassicTea2 * molotST * percent;
+            let MolotSulfurResult = inputClassicTea2 * molotST + MolotSulfurPercentResult;
+            document.getElementById('hammer').innerText = (MolotSulfurResult);
+            // Pickaxe
+            let PickaxeSulfurPercentResult = inputClassicTea2 * pickaxeST * percent;
+            let PickaxeSulfurResult = inputClassicTea2 * pickaxeST + PickaxeSulfurPercentResult;
+            document.getElementById('stonePickaxe').innerText = (PickaxeSulfurResult);
+            // Advanced pickaxe
+            let AdvPickaxeSulfurPercentResult = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult;
+            document.getElementById('advancedPickaxe').innerText = (AdvPickaxeSulfurResult);
+            // Advanced pickaxe1
+            let AdvPickaxeSulfurPercentResult1 = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult1 = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult1;
+            document.getElementById('advancedPickaxe1').innerText = (AdvPickaxeSulfurResult1);
+            // Advanced pickaxe2
+            let AdvPickaxeSulfurPercentResult2 = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult2 = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult2;
+            document.getElementById('advancedPickaxe2').innerText = (AdvPickaxeSulfurResult2);
+            if (STCalc === undefined || NaN)
+            {
+                let valueFinder =
+                    rockvalue = document.getElementById('rock').value;
+                    console.log(rockvalue)
+            }
         }
-
+        function AdvancedTea() {
+            // Osnova vsego
+            let choose = document.getElementById('choose-id1').innerText = ('Advanced Tea');
+            let percent = 0.35;
+            let inputClassicTea2 = document.getElementById('SulfurInput').value;
+            console.log(inputClassicTea2)
+            let STCalc =
+                rockST = document.getElementById('rock').innerText;
+            clubST = document.getElementById('club').innerText;
+            molotST = document.getElementById('hammer').innerText;
+            pickaxeST = document.getElementById('stonePickaxe').innerText;
+            advpickaxeST = document.getElementById('advancedPickaxe').innerText;
+            // Rock ---- sulfur
+            let RockSulfurPercentResult = inputClassicTea2 * rockST * percent;
+            let RockSulfurResult = inputClassicTea2 * rockST + RockSulfurPercentResult;
+            document.getElementById('rock').innerText = (RockSulfurResult);
+            // Club
+            let ClubSulfurPercentResult = inputClassicTea2 * clubST * percent;
+            let ClubSulfurResult = inputClassicTea2 * clubST + ClubSulfurPercentResult;
+            document.getElementById('club').innerText = (ClubSulfurResult);
+            // Molot
+            let MolotSulfurPercentResult = inputClassicTea2 * molotST * percent;
+            let MolotSulfurResult = inputClassicTea2 * molotST + MolotSulfurPercentResult;
+            document.getElementById('hammer').innerText = (MolotSulfurResult);
+            // Pickaxe
+            let PickaxeSulfurPercentResult = inputClassicTea2 * pickaxeST * percent;
+            let PickaxeSulfurResult = inputClassicTea2 * pickaxeST + PickaxeSulfurPercentResult;
+            document.getElementById('stonePickaxe').innerText = (PickaxeSulfurResult);
+            // Advanced pickaxe
+            let AdvPickaxeSulfurPercentResult = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult;
+            document.getElementById('advancedPickaxe').innerText = (AdvPickaxeSulfurResult);
+            // Advanced pickaxe1
+            let AdvPickaxeSulfurPercentResult1 = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult1 = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult1;
+            document.getElementById('advancedPickaxe1').innerText = (AdvPickaxeSulfurResult1);
+            // Advanced pickaxe2
+            let AdvPickaxeSulfurPercentResult2 = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult2 = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult2;
+            document.getElementById('advancedPickaxe2').innerText = (AdvPickaxeSulfurResult2);
+            if (STCalc === undefined || NaN)
+            {
+                let valueFinder =
+                    rockvalue = document.getElementById('rock').value;
+                console.log(rockvalue)
+            }
+        }
+        function PureTea() {
+            // Osnova vsego
+            let choose = document.getElementById('choose-id1').innerText = ('Pure Tea');
+            let percent = 0.50;
+            let inputClassicTea2 = document.getElementById('SulfurInput').value;
+            console.log(inputClassicTea2)
+            let STCalc =
+                rockST = document.getElementById('rock').innerText;
+            clubST = document.getElementById('club').innerText;
+            molotST = document.getElementById('hammer').innerText;
+            pickaxeST = document.getElementById('stonePickaxe').innerText;
+            advpickaxeST = document.getElementById('advancedPickaxe').innerText;
+            // Rock ---- sulfur
+            let RockSulfurPercentResult = inputClassicTea2 * rockST * percent;
+            let RockSulfurResult = inputClassicTea2 * rockST + RockSulfurPercentResult;
+            document.getElementById('rock').innerText = (RockSulfurResult);
+            // Club
+            let ClubSulfurPercentResult = inputClassicTea2 * clubST * percent;
+            let ClubSulfurResult = inputClassicTea2 * clubST + ClubSulfurPercentResult;
+            document.getElementById('club').innerText = (ClubSulfurResult);
+            // Molot
+            let MolotSulfurPercentResult = inputClassicTea2 * molotST * percent;
+            let MolotSulfurResult = inputClassicTea2 * molotST + MolotSulfurPercentResult;
+            document.getElementById('hammer').innerText = (MolotSulfurResult);
+            // Pickaxe
+            let PickaxeSulfurPercentResult = inputClassicTea2 * pickaxeST * percent;
+            let PickaxeSulfurResult = inputClassicTea2 * pickaxeST + PickaxeSulfurPercentResult;
+            document.getElementById('stonePickaxe').innerText = (PickaxeSulfurResult);
+            // Advanced pickaxe
+            let AdvPickaxeSulfurPercentResult = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult;
+            document.getElementById('advancedPickaxe').innerText = (AdvPickaxeSulfurResult);
+            // Advanced pickaxe1
+            let AdvPickaxeSulfurPercentResult1 = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult1 = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult1;
+            document.getElementById('advancedPickaxe1').innerText = (AdvPickaxeSulfurResult1);
+            // Advanced pickaxe2
+            let AdvPickaxeSulfurPercentResult2 = inputClassicTea2 * advpickaxeST * percent;
+            let AdvPickaxeSulfurResult2 = inputClassicTea2 * advpickaxeST + AdvPickaxeSulfurPercentResult2;
+            document.getElementById('advancedPickaxe2').innerText = (AdvPickaxeSulfurResult2);
+            if (STCalc === undefined || NaN)
+            {
+                let valueFinder =
+                    rockvalue = document.getElementById('rock').value;
+                console.log(rockvalue)
+            }
+        }
     </script>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/RustAC.png" type="image/x-icon">
 </head>
 <body>
 <header class="portfolio-header">
     <div class="portfolio-container">
-        <img class="logo" src="images/LogoRework.png" width="100" alt="Лого">
+        <img class="logo" src="./images/LogoRework.png" width="100" alt="Лого">
         <nav class="links">
             <a class="link" href="https://stormachorange.github.io/rust_advanced_calculator/#">HOME</a>
             <a class="linkActive" href="#">FARM</a>
@@ -65,20 +188,18 @@
 <main>
     <div class="main-containerFarm">
         <h1 class="main-title-desc-farm">Farm Calculator</h1>
-
-            <p class="main-descFarm">First, write any number, and then click on any
-                ore that you are interested in *Sulfur ore is some bug*</p>
+            <p class="main-descFarm">First, write any number, and then click on any ore that you are interested in. If you click on tea several times, the code will explode, please press 1 time</p>
     </div>
-    <div class="all-ore"> <!--3к+ букв в этом калькуляторе:)))-->
-<!--Sulfur--><img onclick="let choose = document.getElementById('choose-id').innerText = ('Sulfur');let inputCalculatorSulfur = document.getElementById('SulfurInput').value; console.log(inputCalculatorSulfur + ' Sulfur');let RockCalc = inputCalculatorSulfur * sulfurRock; document.getElementById('rock').innerText = (RockCalc); let ClubCalc = inputCalculatorSulfur * sulfurClub; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorSulfur * sulfurMolot; document.getElementById('hammer').innerText = (HammerCalc);let StonePickaxeCalc = inputCalculatorSulfur * sulfurPickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1); let AdvancedPickaxeCalc2 = inputCalculatorSulfur * sulfurAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2); " id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
-<!--Stone!--><img onclick="let choose = document.getElementById('choose-id').innerText = ('Stone');let inputCalculatorStone = document.getElementById('SulfurInput').value; console.log(inputCalculatorStone + ' Stone'); let RockCalc = inputCalculatorStone * stoneRock; document.getElementById('rock').innerText=(RockCalc); let ClubCalc = inputCalculatorStone * stoneCalc; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorStone * stoneMolot; document.getElementById('hammer').innerText = (HammerCalc); let StonePickaxeCalc = inputCalculatorStone * stonePickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1); let AdvancedPickaxeCalc2 = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2);" src="images/ores/stones.png" alt="Камень" class="stone">
-<!--Metal!--><img onclick="let choose = document.getElementById('choose-id').innerText = ('Metal');let inputCalculatorMetal = document.getElementById('SulfurInput').value; console.log(inputCalculatorMetal + ' Metal'); let RockCalc = inputCalculatorMetal * metalRock; document.getElementById('rock').innerText=(RockCalc); let ClubCalc = inputCalculatorMetal * metalClub; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorMetal * metalMolot; document.getElementById('hammer').innerText = (HammerCalc); let StonePickaxeCalc = inputCalculatorMetal * metalPickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1);let AdvancedPickaxeCalc2 = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2); " src="images/ores/metal.ore.png" alt="Металл" class="metal-ore">
+    <div class="all-ore">
+<!--Sulfur--><img onclick="sulfurcalc() " id="Sera" class="sulfur-ore" src="images/ores/sulfur.ore.png" alt="Сера">
+<!--Stone!--><img onclick="let choose1 = document.getElementById('choose-id1').innerText = ('no tea:('); let choose = document.getElementById('choose-id').innerText = ('Stone');let inputCalculatorStone = document.getElementById('SulfurInput').value; console.log(inputCalculatorStone + ' Stone'); let RockCalc = inputCalculatorStone * stoneRock; document.getElementById('rock').innerText=(RockCalc); let ClubCalc = inputCalculatorStone * stoneCalc; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorStone * stoneMolot; document.getElementById('hammer').innerText = (HammerCalc); let StonePickaxeCalc = inputCalculatorStone * stonePickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1); let AdvancedPickaxeCalc2 = inputCalculatorStone * stoneAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2);" id="Kamen" src="images/ores/stones.png" alt="Камень" class="stone">
+<!--Metal!--><img onclick="let choose1 = document.getElementById('choose-id1').innerText = ('no tea:('); let choose = document.getElementById('choose-id').innerText = ('Metal');let inputCalculatorMetal = document.getElementById('SulfurInput').value; console.log(inputCalculatorMetal + ' Metal'); let RockCalc = inputCalculatorMetal * metalRock; document.getElementById('rock').innerText=(RockCalc); let ClubCalc = inputCalculatorMetal * metalClub; document.getElementById('club').innerText = (ClubCalc); let HammerCalc = inputCalculatorMetal * metalMolot; document.getElementById('hammer').innerText = (HammerCalc); let StonePickaxeCalc = inputCalculatorMetal * metalPickaxe; document.getElementById('stonePickaxe').innerText = (StonePickaxeCalc); let AdvancedPickaxeCalc = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe').innerText = (AdvancedPickaxeCalc); let AdvancedPickaxeCalc1 = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe1').innerText = (AdvancedPickaxeCalc1);let AdvancedPickaxeCalc2 = inputCalculatorMetal * metalAdvancedPickaxe; document.getElementById('advancedPickaxe2').innerText = (AdvancedPickaxeCalc2); " id="Metal" src="images/ores/metal.ore.png" alt="Металл" class="metal-ore">
     </div>
     <div class="all-tea">
-        <img onclick="ClassicTea()" src="images/ores/oretea.png" alt="обычный чай" class="classic-tea">
-        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('Advanced Tea');" src="images/ores/oretea.advanced.png" alt="крутой чай" class="advanced-tea">
-        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('Pure Tea');" src="images/ores/oretea.pure.png" alt="чистенький чаёк" class="pure-tea">
-        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('no tea :(');" src="images/ores/notea.png" alt="без чаёчка" class="no-tea">
+        <img onclick="ClassicTea()" id="classic-tea" src="images/ores/oretea.png" alt="обычный чай" class="classic-tea">
+        <img onclick="AdvancedTea()" src="images/ores/oretea.advanced.png" alt="крутой чай" class="advanced-tea">
+        <img onclick="PureTea()" src="images/ores/oretea.pure.png" alt="чистенький чаёк" class="pure-tea">
+<!--        <img onclick="let choose = document.getElementById('choose-id1').innerText = ('no tea :(');" src="images/ores/notea.png" alt="без чаёчка" class="no-tea">-->
     </div>
     <div class="ore-counter">
         <input class="inputCalculator" type="number" name="" id="SulfurInput">
