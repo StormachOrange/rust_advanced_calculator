@@ -489,3 +489,34 @@ textarea:focus, .inputCalculator
     text-align: center;
     margin-left: 25px;
 }
+.all-bb
+{
+    width: 1370px;
+    height: 215px;
+    padding-left: 30px;
+    display: inline-block;
+    user-select: none;
+}
+.bb-counter
+{
+    /*margin-top: -10px;*/
+    display: flex;
+    /*position: fixed;*/
+    padding-left: 30px;
+    /*display: flex;*/
+}
+.bb-material
+{
+    width: 1370px;
+    height: 35px;
+    padding-left: 30px;
+    display: inline-block;
+    user-select: none;
+    text-align: center;
+}
+.bb-soloma
+{
+    background-color: #ee4025;
+    width: 100px;
+    height: 25px;
+}
