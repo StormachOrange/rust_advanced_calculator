@@ -489,3 +489,183 @@ textarea:focus, .inputCalculator
     text-align: center;
     margin-left: 25px;
 }
+.circle-bb
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 28px;
+    top: 244px;
+    box-shadow: 4px 4px 13.699999809265137px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+    border: 50px white solid
+}
+.foundation
+{
+    /* foundation 1 */
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 140px;
+    top: -32px;
+}
+.foundation-triangle
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 182px;
+    top: -20px;
+}
+.foundation-steps
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 215px;
+    top: 5px;
+}
+.ramp
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 240px;
+    top: 34px;
+}
+.floor
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 256px;
+    top: 69px;
+}
+.floor-triangle
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 263px;
+    top: 104px;
+}
+.floor-frame
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 261px;
+    top: 142px;
+}
+.floor-frame-triangle
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 248px;
+    top: 178px;
+}
+.wall
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 224px;
+    top: 214px;
+}
+.wall-doorway
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 191px;
+    top: 241px;
+}
+.wall-window
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 151px;
+    top: 257px;
+}
+.wall-frame
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 109px;
+    top: 261px;
+}
+.wall-half
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 64px;
+    top: 254px;
+}
+.wall-third
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 27px;
+    top: 231px;
+}
+.stairs-u
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 0px;
+    top: 205px;
+}
+.stairs-l
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: -23px;
+    top: 171px;
+}
+.spiral-block
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: -33px;
+    top: 130px;
+}
+.spiral-block-triangle
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: -32px;
+    top: 83px;
+}
+.roof1
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: -19px;
+    top: 40px;
+}
+.roof2
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 7px;
+    top: 5px;
+}
+.const
+{
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    left: 61px;
+    top: -29px;
+}
